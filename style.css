@@ -1,5 +1,5 @@
 body {
-  background-color: #F7F7F9;
+  background-color:#f7f7f9;
 }
 
 header {
@@ -12,7 +12,7 @@ header a {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #6070FF;
+  color: #6070ff;
   padding: 12px 16px;
   text-decoration: none;
   display: flex;
@@ -23,7 +23,7 @@ header a {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 50px 20px ;
+  padding: 50px 20px;
   background-image: url(images/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
   background-position: top;
@@ -33,24 +33,23 @@ h2 {
   font-family: "poppins", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: #172B4D;
-  line-height: 52px;
-		
+  color: #172b4d;
+  line-height: 52px;	
 }
+
 p {
   font-family: "poppins", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color:#344563;
-  text-align: justify;
-	
+  color: #344563;
+  text-align: justify;	
 }
 
 .headline a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #7F8CFF;
+  color: #7f8cff;
   font-family: "poppins", Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -62,8 +61,9 @@ p {
   margin-top: 12px;
   flex-wrap: wrap;
 }
+
 .social-icons a {
   padding-right: 20px;
   font-size: 20px;
-  color:#505F79;
+  color:#505f79;
 }
