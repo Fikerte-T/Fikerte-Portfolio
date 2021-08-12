@@ -19,7 +19,6 @@ header a {
   align-items: center;
 }
 
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -67,5 +66,5 @@ p {
 .social-icons a {
   padding-right: 20px;
   font-size: 20px;
-  color:#505f79;
+  color: #505f79;
 }
