@@ -1,76 +1,38 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+ Microverse-Student-Project-1
+The purpose of this project is to create a personal portfolio website. It starts with choosing a template from Figma and work on the first page for the mobile version. Flexbox is mainly used to position content in their respective sections.
 
-# Project Name
-
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
+![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-homepage/home-page-mobile-version.png)
 ## Built With
+- HTML, CSS (With Flexbox)
+- Githubflow, HTML&CSS Linter
+- .gitignore file
 
-- Major languages
-- Frameworks
-- Technologies used
+## Prerequisites
+This project needs the following lessons to be completed from week 1, day 2 activities
+- Linters
+- Git& Github& Github Flow
+- Document your repo in a professional way
+- Flexbox
+- Images, media and backgrounds
 
-## Live Demo
+## Author
+👤 Fikerte Tesfaye
+- Github: [@Fikerte-T](https://github.com/Fikerte-T)
+- Twitter: [@tofikertesfaye](https://twitter.com/home)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/fikerte-tesfaye-a68337216/)
 
-[Live Demo Link](https://livedemo.com)
+## 🤝Contributing
+Any feature requests and contributions are welcome!!
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Check the issues page [here](https://github.com/Fikerte-T/Microverse-Student-Project-1/issues).
 
 ## Show your support
-
-Give a ⭐️ if you like this project!
+Give a 👍 👍 if you approve this project!
 
 ## Acknowledgments
+- Learning group
+- Standup team
+- Morning session team
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+## 📝License
+[MIT](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-homepage/MIT.md) Licensed.
