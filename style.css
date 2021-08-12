@@ -19,6 +19,7 @@ header a {
   align-items: center;
 }
 
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -34,7 +35,7 @@ h2 {
   font-weight: 700;
   font-size: 48px;
   color: #172b4d;
-  line-height: 52px;	
+  line-height: 52px;
 
 }
 
@@ -45,7 +46,6 @@ p {
   font-weight: 400;
   color: #344563;
   text-align: justify;
-
 }
 
 .headline a {
@@ -59,7 +59,7 @@ p {
 }
 
 .social-icons {
-  display: flex;	
+  display: flex;
   margin-top: 12px;
   flex-wrap: wrap;
 }
