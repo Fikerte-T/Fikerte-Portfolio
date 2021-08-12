@@ -1,5 +1,5 @@
 body {
-  background-color:#f7f7f9;
+  background-color: #f7f7f9;
 }
 
 header {
@@ -35,6 +35,7 @@ h2 {
   font-size: 48px;
   color: #172b4d;
   line-height: 52px;	
+
 }
 
 p {
@@ -43,7 +44,8 @@ p {
   line-height: 24px;
   font-weight: 400;
   color: #344563;
-  text-align: justify;	
+  text-align: justify;
+
 }
 
 .headline a {
