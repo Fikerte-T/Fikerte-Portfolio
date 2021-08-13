@@ -60,7 +60,11 @@ ul {
   display: flex;
   margin-top: 12px;
   margin-left: 0;
+<<<<<<< HEAD
   padding: 0px;
+=======
+  padding: 0;
+>>>>>>> 7e92c545dd19b2354411b82e7c059c0a4fb99f8a
 }
 
 .social-icons {
