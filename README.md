@@ -1,4 +1,4 @@
-#Microverse-Student-Project-1
+# Microverse-Student-Project-1
 The purpose of this project is to create a personal portfolio website. It starts with choosing a template from Figma and work on the first page for the mobile version. Flexbox is mainly used to position content in their respective sections. The second phase of the project continues with adding work pages and about-me page. It is mainly done with Flexbos and CSS Grid.
 
 ![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-homepage/home-page-mobile-version.png)
