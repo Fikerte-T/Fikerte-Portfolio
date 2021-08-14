@@ -1,6 +1,7 @@
 body {
   background-color: #f7f7f9;
   font-family: "poppins", Helvetica, sans-serif;
+  width: 375px;
 }
 
 .header nav {
@@ -29,9 +30,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 50px 20px;
+}
+
+.headline-container {
   background-image: url(images/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .headline h1 {
