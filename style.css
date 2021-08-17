@@ -32,7 +32,7 @@ body {
   padding: 50px 20px;
 }
 
-.headline-container {
+.headline-container, .shapes-img, .form-container {
   background-image: url(images/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -48,7 +48,6 @@ body {
 }
 
 .headline p {
-  font-family: "poppins", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -100,7 +99,7 @@ body {
   justify-content: space-between;
 }
 
-.card h2 {
+.card h2, .form-page h2 {
   font-size: 32px;
   color: #172b4d;
 }
@@ -218,3 +217,32 @@ body {
 .second-list span {
   padding: 12px;
 }
+
+.form-container {
+  border: 1px solid red;
+  background-image: url("images/Contact\ me.svg");
+  width: 375px;
+  height: 779px;
+}
+
+.shapes-img {
+  background-image: url("images/contact\ form\ shapes-mobile.svg");
+}
+
+.form-page {
+  border: 1px solid green;
+  margin-top: 103px;
+}
+
+.form-page h2 {
+  color: #ffffff;
+}
+
+.form-page p {
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+
