@@ -29,7 +29,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 50px 20px;
-  border: 1px solid green;
 }
 
 .headline-container {
@@ -97,7 +96,6 @@ body {
   grid-template-columns: auto;
   grid-row-gap: 88px;
   padding: 16px;
-  border: 1px solid black;
 }
 
 .card {
@@ -299,7 +297,7 @@ body {
   border-radius: 8px;
 }
 
-.button {
+.button.contact-button {
   width: 140px;
   height: 48px;
 }
