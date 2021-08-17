@@ -17,13 +17,14 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a href="#"><span>My Logo</span></a>
-            <a href="#"><i class="fas fa-bars"></i></a>
-        </nav>
-    </header>
     <section class="headline-container">
+        <header class="header">
+            <nav>
+                <a href="#"><span>My Logo</span></a>
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </nav>
+        </header>
+    
         <div class="headline">
             <h1>I'm Fikerte Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product ,
@@ -50,6 +51,7 @@
             </ul>
         </div>
     </section>
+
     <section class="card-works">
         <section class="card">
             <img src="images/Snapshoot-Portfolio-1.png" alt="">
@@ -139,57 +141,58 @@
             </div>
             <button class="button">See Project</button>
         </section>
-        <section class="about-me headline">
-            <h1>About Myself</h1>
-            <p>Hello I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded, don’t
-                hestiate to contact me.</p>
-            <a href="#">Let's connect</a>
-            <ul class="social-icons">
-                <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-medium-m"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-angellist"></i></a>
-                </li>
-            </ul>
-            <button class="button resume-button">Get my resume</button>
-            <section>
-                <ul class="skill-list">
-                    <li class="list-head first">Languages <a href="#"><i class="fas fa-chevron-down"></i></a></li>
-                    <li class="second-list"><img src="images/js-img.png" alt=""><span>JavaScript</span></li>
-                    <li class="second-list"><img src="images/html-img.png" alt=""><span>HTML</span></li>
-                    <li class="second-list"><img src="images/css-img.png" alt=""><span>CSS</span></li>
-                    <li class="list-head">Frameworks <a href="#"><i class="fas fa-chevron-right"></i></a></li>
-                    <li class="list-head">SKills <a href="#"><i class="fas fa-chevron-right"></i></a></li>
-                </ul>
-            </section>
-        </section>
     </section>
-    <section class="form-container">
-        <div class="shapes-img"></div>
+    <section class="about-me headline-container headline">
+        <h1>About Myself</h1>
+        <p>Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience!
+            If you like what you see and have a project you need coded, don’t
+            hestiate to contact me.</p>
+        <a href="#">Let's connect</a>
+        <ul class="social-icons">
+            <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-medium-m"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-angellist"></i></a>
+            </li>
+        </ul>
+        <button class="button resume-button">Get my resume</button>
+        <section>
+            <ul class="skill-list">
+                <li class="list-head first">Languages <a href="#"><i class="fas fa-chevron-down"></i></a></li>
+                <li class="second-list"><img src="images/js-img.png" alt=""><span>JavaScript</span></li>
+                <li class="second-list"><img src="images/html-img.png" alt=""><span>HTML</span></li>
+                <li class="second-list"><img src="images/css-img.png" alt=""><span>CSS</span></li>
+                <li class="list-head">Frameworks <a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                <li class="list-head">SKills <a href="#"><i class="fas fa-chevron-right"></i></a></li>
+            </ul>
+        </section>  
+    </section>
+    <section class="form-container"> 
+        <div class="shapes-img"></div>     
         <div class="form-page">
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing,
                 a feature that you need built or a project that needs coding.
                 I’d love to help with it </p>
-            <form class="form" action="https://formspree.io/f/mwkawbbd" method="POST">
-                <input type="text" name="name" class="name" placeholder="Enter your name" required>
+            <form class="form" action="https://formspree.io/f/xpzkolpr" method="POST">
+                <input type="text" name="name" class="name" placeholder="Enter your name" required maxlength="30">
                 <input type="email" name="email" class="email" placeholder="Enter your email" required>
-                <textarea name="message" class="message" placeholder="Enter your message" required></textarea>
+                <textarea name="message" class="message" placeholder="Enter your message" required maxlength="500"></textarea>
                 <button class="button">Get In Touch</button>
             </form>
         </div>
+        
     </section>
 </body>
 

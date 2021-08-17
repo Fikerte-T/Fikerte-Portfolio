@@ -21,22 +21,32 @@ body {
   align-items: center;
 }
 
-.about-me.headline {
-  background-color: white;
-  background-image: none;
-}
-
 .headline {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 20px;
-}
-
-.headline-container, .shapes-img, .form-container {
   background-image: url(images/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  border: 1px solid green;
+}
+
+.headline-container {
+  background-color: #ffffff;
+  height: 718px;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 60px;
+  background-image: none;
+}
+
+.about-me {
+  background-color: #ffffff;
+  background-image: none;
+  height: 1263px;
+  margin-top: 100px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 0;
 }
 
 .headline h1 {
@@ -87,6 +97,7 @@ body {
   grid-template-columns: auto;
   grid-row-gap: 88px;
   padding: 16px;
+  border: 1px solid black;
 }
 
 .card {
@@ -220,42 +231,50 @@ body {
 
 .form-container {
   background-image: url("images/Contact_me.svg");
-  width: 375px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
   height: 779px;
   position: relative;
-  z-index: 1;
+  border: 1px solid #ffffff;
+  margin-top: -250px;
+} 
+
+.form-page {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 103px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 24px;
 }
 
 .shapes-img {
   background-image: url("images/contact_form_shapes_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 265px;
   height: 709px;
   position: absolute;
-  margin-left: 110px;
-  margin-top: 21px;
-  z-index: -1;
-}
-
-.form-page {
-  margin-top: 60px;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
-  align-items: center;
-}
+  margin-left: 113px;
+  margin-top: 35px;
+  z-index: 1;
+ }
 
 .form-page h2 {
   color: #ffffff;
-}
+  margin: 0;
+  font-size: 40px;
+  }
 
 .form-page p {
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
-  font-weight: 400;
   text-align: center;
+  font-style: normal;
+  margin: 0;
 }
 
 .form {
@@ -268,7 +287,7 @@ body {
   height: 48px;
   margin-bottom: 25px;
   border-radius: 8px;
-
+  border: none;
 }
 
 .message {
