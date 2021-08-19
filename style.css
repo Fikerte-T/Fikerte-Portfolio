@@ -358,9 +358,9 @@ body {
   .desktop-link {
     color: #344563;
     font-size: 15px;
-    font-weight: 500px;
+    font-weight: 500;
     display: inline-block;
-    padding: 0; 
+    padding: 0;
   }
 
   .header .mobile-link {
@@ -376,7 +376,7 @@ body {
     margin: 48px 8px 76px 35px;
     padding: 0;
   }
- 
+
   .headline .headline-text-container {
     margin: 120px 100px;
     width: 80%;
@@ -384,7 +384,6 @@ body {
 
   .card {
     margin: auto;
-    display: inline-block;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -404,72 +403,73 @@ body {
   .card-img-1 {
     background-image: url(images/Snapshoot-Portfolio-desktop-1.png);
   }
-  
+
   .card-img-2 {
     background-image: url(images/Snapshoot-Portfolio-desktop-2.png);
   }
-  
+
   .card-img-3 {
     background-image: url(images/Snapshoot-Portfolio-desktop-3.png);
   }
-  
+
   .card-img-4 {
     background-image: url(images/Snapshoot-Portfolio-desktop-4.png);
   }
 
-.about-me {
-  display: flex;
-  flex-direction: row;
-  background-image: none;
-  height: 100vh;
-}
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    background-image: none;
+    height: 100vh;
+  }
 
-.aboutme-text, .aboutme-skills {
-  width: 50%;
-  padding: 60px;
-}
+  .aboutme-text, .aboutme-skills {
+    width: 50%;
+    padding: 60px;
+  }
 
-.desktop-second-list {
-  display: flex;
-}
+  .desktop-second-list {
+    display: flex;
+  }
 
-.second-list {
-  display: flex;
-  flex-direction: column;
-  margin-right: 12px;
-  width: 33%;
-}
+  .second-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    width: 33%;
+  }
 
-.form-container {
-  background-image: url(images/desktop-contact\ 2.png);
-  margin: -150px;
-  height: 850px;
-}
+  .form-container {
+    background-image: url(images/desktop-contact\ 2.png);
+    margin: -150px;
+    height: 850px;
+  }
 
-.form-wrapper {
-  margin: 78px 75px 0px 72px;
-  position: relative;
-  height: 750px;
-}
+  .form-wrapper {
+    margin: 78px 75px 0px 72px;
+    position: relative;
+    height: 750px;
+  }
 
-.shapes-img {
-  background-image: url(images/desktop-contact-1.png);
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
+  .shapes-img {
+    background-image: url(images/desktop-contact-1.png);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-.form-page p {
-  width: 45%;
-}
+  .form-page p {
+    width: 45%;
+  }
 
-.form {
-  align-items: center;
-}
+  .form {
+    align-items: center;
+  }
 
-.name, .email, .message {
-  width: 450px;
+  .name,
+  .email,
+  .message {
+    width: 450px;
+  }
 }
-
- }
