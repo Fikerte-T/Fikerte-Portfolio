@@ -382,6 +382,10 @@ body {
     width: 80%;
   }
 
+  .card-works {
+    margin-top: 80px;
+  }
+
   .card {
     margin: auto;
     width: 80%;
@@ -397,38 +401,54 @@ body {
 
   .card-img,
   .card-text {
-    width: 40%;
+    width: 50%;
     height: 448px;
     margin: 0;
   }
 
+  .card-text {
+    padding: 24px;
+  }
+
   .card-img-1 {
     background-image: url(images/Snapshoot-Portfolio-desktop-1.png);
+    margin-right: 22px;
   }
 
   .card-img-2 {
     background-image: url(images/Snapshoot-Portfolio-desktop-2.png);
+    margin-left: 22px;
   }
 
   .card-img-3 {
     background-image: url(images/Snapshoot-Portfolio-desktop-3.png);
+    margin-right: 22px;
   }
 
   .card-img-4 {
     background-image: url(images/Snapshoot-Portfolio-desktop-4.png);
+    margin-left: 22px;
   }
 
   .about-me {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background-image: none;
     height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 80px;
   }
 
-  .aboutme-text,
   .aboutme-skills {
-    width: 50%;
-    padding: 60px;
+    width: 60%;
+    margin: 100px 100px 100px 0;
+  }
+
+  .aboutme-text {
+    width: 40%;
+    margin: 100px 45px 100px 100px;
   }
 
   .desktop-second-list {
@@ -445,7 +465,8 @@ body {
 
   .form-container {
     background-image: url(images/desktop-contact\ 2.png);
-    margin: -150px;
+    margin-top: -90px;
+    /* margin: 0; */
     height: 850px;
   }
 
