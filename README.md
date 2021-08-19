@@ -1,9 +1,11 @@
 # Microverse-Student-Project-1
-The purpose of this project is to create a personal portfolio website. It starts with choosing a template from Figma and work on the first page for the mobile version. Flexbox is mainly used to position content in their respective sections. The second phase of the project continues with adding work pages and about-me page. It is mainly done with Flexbox and CSS Grid. In the last phase a contact form page is added which also makes use of Flexbox
+The purpose of this project is to create a personal portfolio website. 
+The mobile version is done first. It starts with choosing a template from Figma and work on the first page. Flexbox is mainly used to position content in their respective sections. It continues with adding work pages and about-me page. It is mainly done with Flexbox and CSS Grid. The contact page which is the last part in the mobile version design is added which also makes use of Flexbox. 
+Next the desktop version for the entire content  is designed and styled using mainly media query.
 
-![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-contactpage/images/contact-page.png)
+![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-desktop-version/images/desktop-version-screenshot.png)
 ## Built With
-- HTML, CSS (With Flexbox, CSS Grid)
+- HTML, CSS (With Flexbox, CSS Grid, Media query)
 - Githubflow, HTML&CSS Linter
 - .gitignore file
 
@@ -17,14 +19,13 @@ This project needs the following lessons to be completed
 - CSS Grid
 - Forms and validations
 - UX introduction
+- Media query
 
 ## Author 1
 👤 Fikerte Tesfaye
 - Github: [@Fikerte-T](https://github.com/Fikerte-T)
 - Twitter: [@tofikertesfaye](https://twitter.com/home)
 - Linkedin: [Linkedin](https://www.linkedin.com/in/fikerte-tesfaye-a68337216/)
-## Author 2
-- Github: [@Goldinium-T](https://github.com/Goldinium)
 
 ## 🤝Contributing
 Any feature requests and contributions are welcome!!
