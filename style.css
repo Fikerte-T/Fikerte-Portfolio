@@ -433,6 +433,7 @@ body {
 
   .desktop-second-list {
     display: flex;
+    padding: 0;
   }
 
   .second-list {
