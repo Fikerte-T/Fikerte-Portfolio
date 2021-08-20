@@ -406,6 +406,10 @@ body {
     margin: 0;
   }
 
+  .card-img:hover {
+    transform: scale(0.8);
+  }
+
   .card-text {
     padding: 24px;
   }
@@ -496,4 +500,26 @@ body {
   .message {
     width: 450px;
   }
+
+  .name:hover {
+    animation-duration: 1s;
+    animation-name: slidein;
+    /* transition-duration: 1s; */
+    /* transition-delay: 1s; */
+    /* transform: translate(10px); */
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translate(10px);
+    }
+  }
+  .form-wrapper p:hover {
+    transform: translate(10px);
+  }
+
 }
