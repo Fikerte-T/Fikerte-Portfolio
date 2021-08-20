@@ -36,6 +36,10 @@ body {
   align-items: center;
 }
 
+.logo:hover {
+  transform: scale(0.7);
+}
+
 .headline {
   background-image: url(images/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
@@ -499,27 +503,11 @@ body {
   .email,
   .message {
     width: 450px;
+    transition-duration: 1s;
+    transition-property: transform;
   }
 
   .name:hover {
-    animation-duration: 1s;
-    animation-name: slidein;
-    /* transition-duration: 1s; */
-    /* transition-delay: 1s; */
-    /* transform: translate(10px); */
-  }
-
-  @keyframes slidein {
-    from {
-      transform: translate(0px);
+    transform: translate(20px);
     }
-  
-    to {
-      transform: translate(10px);
-    }
-  }
-  .form-wrapper p:hover {
-    transform: translate(10px);
-  }
-
 }
