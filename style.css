@@ -37,7 +37,7 @@ body {
 }
 
 .logo:hover {
-  transform: scale(0.7);
+  transform: scale(0.9);
 }
 
 .headline {
@@ -314,6 +314,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .name,
@@ -411,7 +412,8 @@ body {
   }
 
   .card-img:hover {
-    transform: scale(0.8);
+    transition-duration: 1s;
+    transform: scale(1.1);
   }
 
   .card-text {
@@ -489,25 +491,23 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    z-index: -1;
   }
 
   .form-page p {
     width: 45%;
   }
 
-  .form {
-    align-items: center;
-  }
-
   .name,
   .email,
   .message {
     width: 450px;
-    transition-duration: 1s;
-    transition-property: transform;
   }
 
-  .name:hover {
-    transform: translate(20px);
+  .name:hover,
+  .email:hover,
+  .message:hover {
+    transition-duration: 1s;
+    transform: translate(5px);
     }
 }
