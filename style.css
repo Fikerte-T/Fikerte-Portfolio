@@ -36,6 +36,10 @@ body {
   align-items: center;
 }
 
+.logo:hover {
+  transform: scale(0.9);
+}
+
 .headline {
   background-image: url(images/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
@@ -310,6 +314,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .name,
@@ -406,6 +411,11 @@ body {
     margin: 0;
   }
 
+  .card-img:hover {
+    transition-duration: 1s;
+    transform: scale(1.1);
+  }
+
   .card-text {
     padding: 24px;
   }
@@ -481,19 +491,23 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    z-index: -1;
   }
 
   .form-page p {
     width: 45%;
   }
 
-  .form {
-    align-items: center;
-  }
-
   .name,
   .email,
   .message {
     width: 450px;
+  }
+
+  .name:hover,
+  .email:hover,
+  .message:hover {
+    transition-duration: 1s;
+    transform: translate(5px);
   }
 }
