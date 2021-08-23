@@ -509,5 +509,5 @@ body {
   .message:hover {
     transition-duration: 1s;
     transform: translate(5px);
-    }
+  }
 }
