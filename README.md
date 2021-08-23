@@ -4,6 +4,7 @@ The mobile version is done first. It starts with choosing a template from Figma 
 Next the desktop version for the entire content  is designed and styled using mainly media query.
 
 ![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-desktop-version/images/desktop-version-screenshot.png)
+[Link to the online version](https://fikerte-t.github.io/Microverse-Student-Project-1/)
 ## Built With
 - HTML, CSS (With Flexbox, CSS Grid, Media query)
 - Githubflow, HTML&CSS Linter
