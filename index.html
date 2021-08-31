@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1652c6c81e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -31,15 +29,15 @@
         <header class="header">
             <nav>
                 <a href="#" class="logo"><span>My Logo</span></a>
-                <div class="menu">
-                    <a href="#" class="desktop-link">Portfolio</a>
-                    <a href="#" class="desktop-link">About</a>
-                    <a href="#" class="desktop-link">Contact</a>
-                </div>
-                <a href="#" class="mobile-link menu"><i class="fas fa-bars"></i></a>
+                <a href="#" class="open-menu"><i class="fas fa-bars"></i></a>
+                <ul class="menu">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                    <div><a href="#" class="close-menu"><i class="fas fa-times"></i></a></div>
+                </ul>           
             </nav>
-        </header>
-        
+        </header>       
         <section class="headline">
             <div class="headline-text-container">
                 <h1>I'm Fikerte Glad to see you!</h1>
@@ -226,5 +224,6 @@
             </div>    
         </div>         
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
