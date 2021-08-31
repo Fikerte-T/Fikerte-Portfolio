@@ -7,9 +7,10 @@ body {
 
 .headline-main {
   background-color: #fff;
-  height: 718px;
+  height: 100vh;
   border-bottom-left-radius: 60px;
   background-image: none;
+  margin-bottom: 40px;
 }
 
 .header nav {
@@ -23,11 +24,45 @@ body {
   padding: 12px 16px;
 }
 
-.desktop-link {
-  display: none;
+.menu {
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  width: 340px;
+  z-index: 100;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #6070ff;
+  opacity: 0.9;
+  transition: top 1s ease;
+  display: flex;
+  top: -150%;
 }
 
-.mobile-link,
+.menu li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.menu li:first-child {
+  margin-top: 85px;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 25px;
+}
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.open-menu,
 .logo {
   font-size: 18px;
   font-weight: 700;
@@ -76,7 +111,7 @@ body {
   text-align: justify;
 }
 
-.headline a {
+.headline .lets-connect {
   text-decoration: none;
   text-transform: uppercase;
   color: #7f8cff;
@@ -85,21 +120,21 @@ body {
   line-height: 24px;
 }
 
-.social-icons {
+.headline .social-icons {
   display: flex;
   margin-top: 12px;
   flex-wrap: wrap;
   padding-left: 0;
 }
 
-.social-icons a {
+.headline .social-icons a {
   padding-right: 20px;
   font-size: 20px;
   color: #505f79;
   text-decoration: none;
 }
 
-.social-icons li {
+.headline .social-icons li {
   list-style-type: none;
 }
 
@@ -149,14 +184,14 @@ body {
   color: #172b4d;
 }
 
-.title-role ul {
+.card-works .title-role ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
 
-.title-role li {
+.card-works .title-role li {
   list-style-type: none;
   font-size: 13px;
   font-weight: 600;
@@ -167,12 +202,12 @@ body {
   color: #c1c7d0;
 }
 
-.title-role i {
+.card-works .title-role i {
   font-size: 8px;
   flex: 1;
 }
 
-.languages ul {
+.card-works .languages ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -180,12 +215,12 @@ body {
   height: 40px;
 }
 
-.languages li {
+.card-works .languages li {
   list-style-type: none;
   margin-right: 12px;
 }
 
-.languages a {
+.card-works .languages a {
   text-decoration: none;
   font-size: 12px;
   color: #6070ff;
@@ -351,24 +386,30 @@ body {
     width: 100%;
   }
 
-  .header .menu {
+  .menu {
     height: 40px;
     margin-top: 15px;
     margin-right: 142px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: unset;
+    position: unset;
   }
 
-  .desktop-link {
+  .menu li a {
     color: #344563;
     font-size: 15px;
     font-weight: 500;
-    display: inline-block;
-    padding: 0;
   }
 
-  .header .mobile-link {
+  .menu li:first-child {
+    margin: 0;
+  }
+
+  .header .open-menu,
+  .close-menu {
     display: none;
   }
 
