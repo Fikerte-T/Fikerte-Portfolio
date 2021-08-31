@@ -6,7 +6,7 @@ Next the desktop version for the entire content is designed and styled using mai
 
 [Link to the online version](https://fikerte-t.github.io/Microverse-Student-Project-1/)
 
-![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-desktop-version/images/desktop-version-screenshot.png)
+![project-screenshot](https://github.com/Fikerte-T/Microverse-Student-Project-1/blob/add-mobile-menu/images/mobile-menu-screenshot.png)
 
 ## Built With
 - HTML, CSS (With Flexbox, CSS Grid, Media query)
