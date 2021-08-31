@@ -1,21 +1,23 @@
-let menu = document.querySelector('.menu');
-let openMenu = document.querySelector('.open-menu');
-let closeMenu = document.querySelector('.close-menu');
-let body = document.querySelector('body');
-let headlineMain = document.querySelector('.headline-main');
+const menu = document.querySelector('.menu');
+const openMenu = document.querySelector('.open-menu');
+const closeMenu = document.querySelector('.close-menu');
+const body = document.querySelector('body');
+const portfolio = document.querySelector('.portfolio-link');
+const about = document.querySelector('.about-link');
+const contact = document.querySelector('.contact-link');
 
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
-
-
-function show(){
-    menu.style.display = 'flex';
-    menu.style.top = '0';
-    // headlineMain.style.filter = 'blur(4px)';
-    // body.style.filter = 'blur(4px)';
-    
+function show() {
+  menu.style.top = '0';
+  body.style.overflow = 'hidden';
 }
 
-function close(){
-    menu.style.top = '-150%';
+function close() {
+  menu.style.top = '-150%';
+  body.style.overflow = 'auto';
 }
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+portfolio.addEventListener('click', close);
+about.addEventListener('click', close);
+contact.addEventListener('click', close);
