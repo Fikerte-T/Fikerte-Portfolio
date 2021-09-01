@@ -5,12 +5,11 @@ let aboutMe = document.querySelector('.about-me');
 let cardContainer = document.createElement('section');
 cardContainer.classList.add('card-works');
 let buttonsArr = [];
+let cardArr = [];
+let modalArr = [];
 
-const languagesList = ['html', 'css', 'javascript'];
+// const languagesList = ['html', 'css', 'javascript'];
 // let cardContainer = document.querySelector('.card-works');
-// let card2 = document.querySelector('.card-2');
-// let card3 = document.querySelector('.card-3');
-// let card4 = document.querySelector('.card-4');
 
 let projects = [
     {
@@ -109,42 +108,147 @@ projects.forEach((project) => {
         const languagesli = document.createElement('li');
         const languagesLink = document.createElement('a');
         languagesli.appendChild(languagesLink);
-        languagesLink.innerText = languagesList[i];
+        languagesLink.innerText = project.languagesList[i];
         languagesUl.appendChild(languagesli);
     }
     cardText.appendChild(languagesUl);
 
     let seeProjectbtn = document.createElement('button');
-    seeProjectbtn.classList.add('button');
+    // seeProjectbtn.classList.add('button');
     seeProjectbtn.setAttribute('type', 'button');
     seeProjectbtn.textContent = 'See Project';
     cardText.appendChild(seeProjectbtn);
     buttonsArr.push(seeProjectbtn);
 
+    cardArr.push(card);
+
+    let modalContainer = document.createElement('div');
+    // modalContainer.classList.add('modal-container');
+    card.appendChild(modalContainer);
+
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
+    modalContainer.appendChild(modal);
+
+    let modalTitle = document.createElement('h2');
+    modalTitle.textContent = project.name;
+    modal.appendChild(modalTitle);
+
+    let close = document.createElement('a');
+    close.classList.add('close-modal');
+    const closeButton = document.createElement('i');
+    closeButton.classList.add('fas', 'fa-times');
+    close.appendChild(closeButton);
+    modal.appendChild(close);
+
+    let modalTitleRoleul = document.createElement('ul');
+    modalTitleRoleul.classList.add('title-role');
+    const modalTitleRoleli1 = document.createElement('li');
+    modalTitleRoleli1.textContent = 'CANOPY';
+    modalTitleRoleul.appendChild(modalTitleRoleli1);
+    const modalTitleRoleli2 = document.createElement('li');
+    modalTitleRoleli2.classList.add('role');
+    const modalTitleRoleImg1 = document.createElement('i');
+    modalTitleRoleImg1.classList.add('fas', 'fa-circle');
+    modalTitleRoleli2.appendChild(modalTitleRoleImg1);
+    modalTitleRoleul.appendChild(modalTitleRoleli2);
+    const modalTitleRoleli3 = document.createElement('li');
+    modalTitleRoleli3.classList.add('role');
+    modalTitleRoleli3.textContent = 'Back End Dev';
+    modalTitleRoleul.appendChild(modalTitleRoleli3);
+    const modalTitleRoleli4 = document.createElement('li');
+    modalTitleRoleli4.classList.add('role');
+    const modalTitleRoleImg2 = document.createElement('i');
+    modalTitleRoleImg2.classList.add('fas', 'fa-circle');
+    modalTitleRoleli4.appendChild(modalTitleRoleImg2);
+    modalTitleRoleul.appendChild(modalTitleRoleli4);
+    const modalTitleRoleli5 = document.createElement('li');
+    modalTitleRoleli5.classList.add('role');
+    modalTitleRoleli5.textContent = '2015';
+    modalTitleRoleul.appendChild(modalTitleRoleli5);
+    modal.appendChild(modalTitleRoleul);
+
+    let modalCardImg = document.createElement('div');
+    modalCardImg.classList.add('card-img-modal');
+    modalCardImg.style.backgroundImage = project.featuredImage;
+    modal.appendChild(modalCardImg);
+
+    const descriptionContainer = document.createElement('div');
+    descriptionContainer.classList.add('description-container');
+    modal.appendChild(descriptionContainer);
+    
+    let modalDescription = document.createElement('p');
+    modalDescription.classList.add('modal-description');
+    modalDescription.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s';
+    descriptionContainer.appendChild(modalDescription);
+
+    let modalLanguagesUl = document.createElement('ul');
+    modalLanguagesUl.classList.add('languages');
+    for (let i = 0; i < project.languagesList.length; i++) {
+        const modalLanguagesli = document.createElement('li');
+        const modalLanguagesLink = document.createElement('a');
+        modalLanguagesli.appendChild(modalLanguagesLink);
+        modalLanguagesLink.innerText = project.languagesList[i];
+        modalLanguagesUl.appendChild(modalLanguagesli);
+    }
+    descriptionContainer.appendChild(modalLanguagesUl);
+
+    modalArr.push(modalContainer);
+
 });
 
-const firstButton = document.querySelector('.button');
-firstButton.addEventListener('click', openModal.bind(null, projects[0]));
-const card = document.querySelector('.card');
 
-function openModal(value) {
-    const createModal = document.createElement('div');
-    createModal.innerHTML = `
-        <div>${value.name}</div>
-        <div>This is going to be the description
-            <div> Links </div>
-            <div> languages </div>
-        </div>
-    `
-    card.appendChild(createModal);
-}
+// const firstButton = document.querySelector('.button');
+// firstButton.addEventListener('click', openModal.bind(null, projects[0]));
+// const card = document.querySelector('.card');
 
+// function openModal(value) {
+//     const createModal = document.createElement('div');
+//     createModal.innerHTML = `
+//         <div>${value.name}</div>
+//         <div>This is going to be the description
+//             <div> Links </div>
+//             <div> languages </div>
+//         </div>
+//     `
+//     card.appendChild(createModal);
+// }
+
+cardArr[0].setAttribute('class', 'card card-1');
+cardArr[1].setAttribute('class', 'card card-2');
+cardArr[2].setAttribute('class', 'card card-3');
+cardArr[3].setAttribute('class', 'card card-4');
+
+const card1 = document.querySelector('card-1');
+const card2 = document.querySelector('card-2');
+const card3 = document.querySelector('card-3');
+const card4 = document.querySelector('card-4');
+
+modalArr[0].setAttribute('class', 'modal-container modal-1');
+modalArr[1].setAttribute('class', 'modal-container modal-2');
+modalArr[2].setAttribute('class', 'modal-container modal-3');
+modalArr[3].setAttribute('class', 'modal-container modal-4');
+
+const modal1 = document.querySelector('modal-1');
+const modal2 = document.querySelector('modal-2');
+const modal3 = document.querySelector('modal-3');
+const modal4 = document.querySelector('modal-4');
+
+buttonsArr[0].setAttribute('class', 'button button-1');
+buttonsArr[1].setAttribute('class', 'button button-2');
+buttonsArr[2].setAttribute('class', 'button button-3');
+buttonsArr[3].setAttribute('class', 'button button-4');
+
+const button1 = document.querySelector('.button-1');
+const button2 = document.querySelector('.button-2');
+const button3 = document.querySelector('.button-3');
+const button4 = document.querySelector('.button-4');
 // buttonsArr.forEach(btn=>console.log(btn));
 
 
-// button1.addEventListner('click', function(){
-//     console.log('hi');
-// });
+button1.addEventListner('click', function(){
+    modal1.style.display = 'flex';
+});
 
 // let modalContainer = document.createElement('div');
 // modalContainer.classList.add('modal-container');
