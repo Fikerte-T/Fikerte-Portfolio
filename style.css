@@ -153,9 +153,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
-.card-img {
+.card-img,
+.card-img-modal {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -212,7 +214,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  height: 40px;
+  height: 60px;
 }
 
 .card-works .languages li {
@@ -228,6 +230,59 @@ body {
   background-color: #ebebff;
   border-radius: 8px;
   font-weight: 500;
+}
+
+.modal-container {
+  width: 400px;
+  height: 1000px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -100px;
+  right: -20px;
+  margin: 0;
+  background-color: #e5e5e5;
+  z-index: 10;
+}
+
+.modal {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  align-self: center;
+  padding: 15px;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #bdb9b9;
+  font-weight: normal;
+}
+
+.modal-1,
+.modal-2,
+.modal-3,
+.modal-4 {
+  display: none;
+}
+
+.live-link,
+.source-link {
+  text-decoration: none;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px;
+
 }
 
 .resume-button.button {
@@ -489,17 +544,13 @@ body {
   }
 
   .modal-container {
-    /* display: none; */
     width: 1200px;
     height: 1000px;
-    /* margin-left: 0; */
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -60px;
-    /* margin-bottom: 200px; */
-    /* border: 1px solid red; */
+    top: -120px;
     background-color: #e5e5e5;
     z-index: 10;
   }
@@ -517,13 +568,17 @@ body {
     border-radius: 12px;
   }
 
-  /* .modal-1, */
+  .modal-1,
   .modal-2,
   .modal-3,
   .modal-4 {
     display: none;
   }
   
+  .open-modal {
+    display: flex;
+  }
+
 
   .close-modal {
     position: absolute;
@@ -536,20 +591,16 @@ body {
   .modal .card-img-modal {
     width: 100%;
     height: 60%;
-    /* padding: 140px, 70px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    /* border: 2px solid blue; */
   }
   .modal h2 {
     margin: 0;
-    /* color: red; */
   }
 
   .description-container {
     width: 100%;
-    /* border: 1px solid purple; */
     display: flex;
     padding-top: 10px;
   }
