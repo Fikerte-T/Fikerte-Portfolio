@@ -276,13 +276,15 @@ body {
 
 .live-link,
 .source-link {
+  display: block;
+  width: 90px;
   text-decoration: none;
   color: #396df2;
   border: 1px solid #6070ff;
-  padding: 12px;
+  padding: 10px;
   border-radius: 8px;
-  margin: 10px;
-
+  margin: 30px 10px 0 10px;
+  float: left;
 }
 
 .resume-button.button {
@@ -574,11 +576,10 @@ body {
   .modal-4 {
     display: none;
   }
-  
+
   .open-modal {
     display: flex;
   }
-
 
   .close-modal {
     position: absolute;
@@ -595,6 +596,7 @@ body {
     background-position: center;
     background-size: 100% 100%;
   }
+
   .modal h2 {
     margin: 0;
   }
@@ -608,7 +610,8 @@ body {
   .modal-description {
     width: 70%;
     font-size: 15px;
-    color:#344563;
+    color: #344563;
+    line-height: 30px;
   }
 
   .about-me {
