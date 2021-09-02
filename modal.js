@@ -10,7 +10,7 @@ const closeModalArr = [];
 const projects = [
   {
     name: 'Tonic',
-    featuredImage: "url('./images/Snapshoot-Portfolio-1.png')",
+    featuredImage: { link: './images/Snapshoot-Portfolio-1.png', alt: 'Tonic project image' },
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languagesList: ['html', 'css', 'javascript'],
     liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
@@ -18,7 +18,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories',
-    featuredImage: "url('./images/Snapshoot-Portfolio-2.png')",
+    featuredImage: { link: './images/Snapshoot-Portfolio-2.png', alt: 'Multi-post stories project image' },
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languagesList: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     name: 'Facebook 360',
-    featuredImage: "url('./images/Snapshoot-Portfolio-3.png')",
+    featuredImage: { link: './images/Snapshoot-Portfolio-3.png', alt: 'Facebook 360 project image' },
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     languagesList: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     name: 'Uber Navigation',
-    featuredImage: "url('./images/Snapshoot-Portfolio-4.png')",
+    featuredImage: { link: './images/Snapshoot-Portfolio-4.png', alt: 'Uber Navigation project image' },
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     languagesList: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
@@ -48,10 +48,13 @@ projects.forEach((project) => {
   const card = document.createElement('div');
   card.classList.add('card');
   cardContainer.appendChild(card);
-  const cardImg = document.createElement('div');
-  cardImg.classList.add('card-img');
-  cardImg.style.backgroundImage = project.featuredImage;
-  card.appendChild(cardImg);
+  const cardImgContainer = document.createElement('div');
+  cardImgContainer.classList.add('card-img-container');
+  const cardImg = document.createElement('img');
+  cardImg.setAttribute('alt', project.featuredImage.alt);
+  cardImg.setAttribute('src', project.featuredImage.link);
+  cardImgContainer.appendChild(cardImg);
+  card.appendChild(cardImgContainer);
   const cardText = document.createElement('div');
   cardText.classList.add('card-text');
   card.appendChild(cardText);
@@ -143,10 +146,18 @@ projects.forEach((project) => {
   modalTitleRoleli5.textContent = '2015';
   modalTitleRoleul.appendChild(modalTitleRoleli5);
   modal.appendChild(modalTitleRoleul);
-  const modalCardImg = document.createElement('div');
-  modalCardImg.classList.add('card-img-modal');
-  modalCardImg.style.backgroundImage = project.featuredImage;
-  modal.appendChild(modalCardImg);
+  const modalCardImgContainer = document.createElement('div');
+  modalCardImgContainer.classList.add('card-img-container');
+  const modalCardImg = document.createElement('img');
+  modalCardImg.setAttribute('alt', project.featuredImage.alt);
+  modalCardImg.setAttribute('src', project.featuredImage.link);
+  modalCardImgContainer.appendChild(modalCardImg);
+  modal.appendChild(modalCardImgContainer);
+  // const modalCardImg = document.createElement('div');
+  // modalCardImg.classList.add('card-img-modal');
+  // modalCardImg.style.backgroundImage = project.featuredImage.link;
+  // modalCardImg.setAttribute('alt', 'featuredImg.alt');
+  // modal.appendChild(modalCardImg);
   const descriptionContainer = document.createElement('div');
   descriptionContainer.classList.add('description-container');
   modal.appendChild(descriptionContainer);

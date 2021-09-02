@@ -153,31 +153,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   position: relative;
-}
-
-.card-img,
-.card-img-modal {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  height: 250px;
-}
-
-.card-img-1 {
-  background-image: url(images/Snapshoot-Portfolio-1.png);
-}
-
-.card-img-2 {
-  background-image: url(images/Snapshoot-Portfolio-2.png);
-}
-
-.card-img-3 {
-  background-image: url(images/Snapshoot-Portfolio-3.png);
-}
-
-.card-img-4 {
-  background-image: url(images/Snapshoot-Portfolio-4.png);
 }
 
 .card h2,
@@ -233,14 +210,16 @@ body {
 }
 
 .modal-container {
-  width: 400px;
+  width: 100%;
   height: 1000px;
+  position: relative;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   top: -100px;
   right: -20px;
+  left: 0;
   margin: 0;
   background-color: #e5e5e5;
   z-index: 10;
@@ -250,6 +229,7 @@ body {
   width: 80%;
   height: 80%;
   position: relative;
+  position: absolute;
   align-self: center;
   padding: 15px;
   overflow: hidden;
@@ -494,7 +474,8 @@ body {
     width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
 
   .card-2,
@@ -509,14 +490,14 @@ body {
     position: relative;
   }
 
-  .card-img,
+  .card .card-img-container,
   .card-text {
     width: 50%;
     height: 448px;
     margin: 0;
   }
 
-  .card-img:hover {
+  .card-img-container:hover {
     transition-duration: 1s;
     transform: scale(1.1);
   }
@@ -546,9 +527,10 @@ body {
   }
 
   .modal-container {
-    width: 1200px;
+    /* width: 1000px; */
     height: 1000px;
     position: absolute;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -558,7 +540,7 @@ body {
   }
 
   .modal {
-    width: 80%;
+    width: 85%;
     height: 90%;
     position: relative;
     align-self: center;
@@ -589,12 +571,21 @@ body {
     font-weight: normal;
   }
 
-  .modal .card-img-modal {
+  .card .card-img-container {
+    width: 60%;
+  }
+
+  .modal .card-img-container {
     width: 100%;
     height: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+  }
+
+  .card .card-img-container img,
+  .modal .card-img-container img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
   }
 
   .modal h2 {
@@ -608,7 +599,7 @@ body {
   }
 
   .modal-description {
-    width: 70%;
+    width: 60%;
     font-size: 15px;
     color: #344563;
     line-height: 30px;
