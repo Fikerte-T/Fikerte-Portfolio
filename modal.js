@@ -153,11 +153,6 @@ projects.forEach((project) => {
   modalCardImg.setAttribute('src', project.featuredImage.link);
   modalCardImgContainer.appendChild(modalCardImg);
   modal.appendChild(modalCardImgContainer);
-  // const modalCardImg = document.createElement('div');
-  // modalCardImg.classList.add('card-img-modal');
-  // modalCardImg.style.backgroundImage = project.featuredImage.link;
-  // modalCardImg.setAttribute('alt', 'featuredImg.alt');
-  // modal.appendChild(modalCardImg);
   const descriptionContainer = document.createElement('div');
   descriptionContainer.classList.add('description-container');
   modal.appendChild(descriptionContainer);
