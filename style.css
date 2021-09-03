@@ -400,14 +400,23 @@ body {
 
 .form .invalid-email {
   border: 2px solid red;
+  outline: none;
+  margin-bottom: 0!important;
+  background-color: rgb(241, 191, 191);
 }
 
 .form .valid-email {
   border: 2px solid green;
+  margin-bottom: 0!important;
+  outline: none;
+  background-color: rgb(185, 238, 185);
 }
 
-.form .errorMsg {
+#errorMsg {
   color: red;
+  margin-bottom: 25px;
+  align-self: flex-start;
+  margin-left: 8px;
 }
 
 
