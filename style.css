@@ -398,6 +398,27 @@ body {
   border: none;
 }
 
+.form .invalid-email {
+  border: 2px solid red;
+  outline: none;
+  margin-bottom: 0 !important;
+  background-color: rgb(241, 191, 191);
+}
+
+.form .valid-email {
+  border: 2px solid green;
+  margin-bottom: 0 !important;
+  outline: none;
+  background-color: rgb(185, 238, 185);
+}
+
+#errorMsg {
+  color: rgb(187, 14, 14);
+  margin-bottom: 25px;
+  align-self: flex-start;
+  margin-left: 8px;
+}
+
 .message {
   width: 327px;
   height: 170px;
