@@ -217,17 +217,11 @@ const closeModal3 = document.querySelector('.close-modal-3');
 const closeModal4 = document.querySelector('.close-modal-4');
 button1.addEventListener('click', () => {
   modal1.style.display = 'flex';
-  modal2.style.display = 'none';
-  modal3.style.display = 'none';
-  modal4.style.display = 'none';
 });
 closeModal1.addEventListener('click', () => {
   modal1.style.display = 'none';
 });
 button2.addEventListener('click', () => {
-  modal1.style.display = 'none';
-  modal3.style.display = 'none';
-  modal4.style.display = 'none';
   modal2.style.display = 'flex';
 });
 closeModal2.addEventListener('click', () => {
