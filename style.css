@@ -398,6 +398,19 @@ body {
   border: none;
 }
 
+.form .invalid-email {
+  border: 2px solid red;
+}
+
+.form .valid-email {
+  border: 2px solid green;
+}
+
+.form .errorMsg {
+  color: red;
+}
+
+
 .message {
   width: 327px;
   height: 170px;
