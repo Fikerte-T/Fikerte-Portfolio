@@ -1,0 +1,19 @@
+{
+  "name": "fikerte-portfolio",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to create a personal portfolio website. \r The mobile version is done first. It starts with choosing a template from Figma and work on the first page. Flexbox is mainly used to position content in their respective sections. It continues with adding work pages and about-me page. It is mainly done with Flexbox and CSS Grid. The contact page which is the last part in the mobile version design is added which also makes use of Flexbox. Next the desktop version for the entire content is designed and styled using mainly media query. The mobile menu is added using mainly Javascript and some CSS. Javasript is also used to create popup windows in both mobile and desktop versions.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fikerte-T/Fikerte-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fikerte-T/Fikerte-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Fikerte-T/Fikerte-Portfolio#readme"
+}
