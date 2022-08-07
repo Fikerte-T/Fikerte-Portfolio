@@ -9,36 +9,35 @@ const closeModalArr = [];
 
 const projects = [
   {
-    name: 'Tonic',
-    featuredImage: { link: './images/Snapshoot-Portfolio-1.png', alt: 'Tonic project image' },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    name: 'Leaderboard',
+    featuredImage: { link: './images/proj-leaderboard.png', alt: 'Leaderboard project image' },
+    description: 'Users can submit their scores to the external Leaderboard API and all users\' data can be received from the API and to be displayed on the website.',
     languagesList: ['html', 'css', 'javascript'],
-    liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
-    sourceLink: 'https://github.com/Fikerte-T/Microverse-Student-Project-1/',
+    sourceLink: 'https://github.com/Fikerte-T/Leaderboard-2',
   },
   {
-    name: 'Multi-Post Stories',
-    featuredImage: { link: './images/Snapshoot-Portfolio-2.png', alt: 'Multi-post stories project image' },
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languagesList: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
-    sourceLink: 'https://github.com/Fikerte-T/Microverse-Student-Project-1/',
+    name: 'Math Magicialns',
+    featuredImage: { link: './images/proj-mathmagicians.png', alt: 'Math magicians project image' },
+    description: 'A single page application created with react. It uses components to display the UI and to implement the math logic',
+    languagesList: ['html', 'css', 'javascript', 'React'],
+    liveLink: 'https://reactapp-math-magicians.herokuapp.com/',
+    sourceLink: 'https://github.com/Fikerte-T/math-magicians',
   },
   {
-    name: 'Facebook 360',
-    featuredImage: { link: './images/Snapshoot-Portfolio-3.png', alt: 'Facebook 360 project image' },
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    languagesList: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
-    sourceLink: 'https://github.com/Fikerte-T/Microverse-Student-Project-1/',
+    name: 'SpaceX-Hub',
+    featuredImage: { link: './images/proj-spacex.png', alt: 'SpaceX-Hub project image' },
+    description: 'A web app that provides commercial and scientific space travel services; uses data from SpaceX API',
+    languagesList: ['html', 'css', 'javascript', 'React', 'Redux'],  
+    liveLink: 'https://spaces-hub-app.herokuapp.com/',
+    sourceLink: 'https://github.com/Fikerte-T/SpaceX-Hub',
   },
   {
-    name: 'Uber Navigation',
-    featuredImage: { link: './images/Snapshoot-Portfolio-4.png', alt: 'Uber Navigation project image' },
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    name: 'Budgetapp',
+    featuredImage: { link: './images/proj-budgetapp.png', alt: 'Budgetapp project image' },
+    description: 'Allows users manage their budget. Users can have a list of transactions associated with a category, so that they can see how much money they spent and on what; signup required.',
     languagesList: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://fikerte-t.github.io/Microverse-Student-Project-1/',
-    sourceLink: 'https://github.com/Fikerte-T/Microverse-Student-Project-1/',
+    liveLink: 'https://limitless-waters-86087.herokuapp.com/',
+    sourceLink: 'https://github.com/Fikerte-T/budget-app',
   },
 ];
 
@@ -61,32 +60,32 @@ projects.forEach((project) => {
   const projectTitle = document.createElement('h2');
   projectTitle.textContent = project.name;
   cardText.appendChild(projectTitle);
-  const titleRoleul = document.createElement('ul');
-  titleRoleul.classList.add('title-role');
-  const titleRoleli1 = document.createElement('li');
-  titleRoleli1.textContent = 'CANOPY';
-  titleRoleul.appendChild(titleRoleli1);
-  const titleRoleli2 = document.createElement('li');
-  titleRoleli2.classList.add('role');
-  const titleRoleImg1 = document.createElement('i');
-  titleRoleImg1.classList.add('fas', 'fa-circle');
-  titleRoleli2.appendChild(titleRoleImg1);
-  titleRoleul.appendChild(titleRoleli2);
-  const titleRoleli3 = document.createElement('li');
-  titleRoleli3.classList.add('role');
-  titleRoleli3.textContent = 'Back End Dev';
-  titleRoleul.appendChild(titleRoleli3);
-  const titleRoleli4 = document.createElement('li');
-  titleRoleli4.classList.add('role');
-  const titleRoleImg2 = document.createElement('i');
-  titleRoleImg2.classList.add('fas', 'fa-circle');
-  titleRoleli4.appendChild(titleRoleImg2);
-  titleRoleul.appendChild(titleRoleli4);
-  const titleRoleli5 = document.createElement('li');
-  titleRoleli5.classList.add('role');
-  titleRoleli5.textContent = '2015';
-  titleRoleul.appendChild(titleRoleli5);
-  cardText.appendChild(titleRoleul);
+  // const titleRoleul = document.createElement('ul');
+  // titleRoleul.classList.add('title-role');
+  // const titleRoleli1 = document.createElement('li');
+  // titleRoleli1.textContent = 'CANOPY';
+  // titleRoleul.appendChild(titleRoleli1);
+  // const titleRoleli2 = document.createElement('li');
+  // titleRoleli2.classList.add('role');
+  // const titleRoleImg1 = document.createElement('i');
+  // titleRoleImg1.classList.add('fas', 'fa-circle');
+  // titleRoleli2.appendChild(titleRoleImg1);
+  // titleRoleul.appendChild(titleRoleli2);
+  // const titleRoleli3 = document.createElement('li');
+  // titleRoleli3.classList.add('role');
+  // titleRoleli3.textContent = 'Back End Dev';
+  // titleRoleul.appendChild(titleRoleli3);
+  // const titleRoleli4 = document.createElement('li');
+  // titleRoleli4.classList.add('role');
+  // const titleRoleImg2 = document.createElement('i');
+  // titleRoleImg2.classList.add('fas', 'fa-circle');
+  // titleRoleli4.appendChild(titleRoleImg2);
+  // titleRoleul.appendChild(titleRoleli4);
+  // const titleRoleli5 = document.createElement('li');
+  // titleRoleli5.classList.add('role');
+  // titleRoleli5.textContent = '2015';
+  // titleRoleul.appendChild(titleRoleli5);
+  // cardText.appendChild(titleRoleul);
   const description = document.createElement('p');
   description.textContent = project.description;
   cardText.appendChild(description);
