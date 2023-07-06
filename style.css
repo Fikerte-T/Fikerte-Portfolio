@@ -272,7 +272,7 @@ body {
   font-family: "poppins", Helvetica, sans-serif;
 }
 
-.button {
+button {
   font-size: 17px;
   color: #396df2;
   font-weight: 600;
@@ -282,19 +282,19 @@ body {
   width: 124px;
 }
 
-.button:hover {
+button:hover {
   box-shadow: 0 8px rgba(64, 83, 252, 0.24);
   background-color: #6070ff;
   color: #fff;
 }
 
-.button:disabled {
+button:disabled {
   border: 1px solid #c1c7d0;
   cursor: not-allowed;
   color: #5e6c84;
 }
 
-.button:active {
+button:active {
   background: #2230d2;
   color: #fff;
 }
