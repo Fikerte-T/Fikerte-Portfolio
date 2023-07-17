@@ -32,7 +32,7 @@ const projects = [
     sourceLink: 'https://github.com/Fikerte-T/Leaderboard-2',
   },
   {
-    name: 'Math Magicialns',
+    name: 'Math Magicians',
     featuredImage: { link: ['./images/proj-mathmagicians.png', './images/proj-mathmagicians.png'], alt: 'Math magicians project image' },
     description: 'A single page application created with react. It uses components to display the UI and to implement the math logic',
     languagesList: ['html', 'css', 'javascript', 'React'],
